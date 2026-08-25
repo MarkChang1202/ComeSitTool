@@ -78,6 +78,7 @@ import "dayjs/locale/zh-tw";
 import LockService from "@/utils/LockService";
 import { DatePicker } from "v-calendar";
 import { BOOKING_TEXT_V2 } from "@/constants/messages";
+import { PRICE_PER_PERSON } from "@/constants/pricing";
 
 export default {
   name: "CopyTool",
@@ -177,7 +178,7 @@ export default {
     },
     handleBookingTextV2() {
       this.bookingTextV2 = BOOKING_TEXT_V2({
-        amount: this.peopleNumberV2 * 250,
+        amount: this.peopleNumberV2 * PRICE_PER_PERSON,
       });
     },
     async copy() {
