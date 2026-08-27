@@ -17,7 +17,7 @@ module.exports = {
   devServer: {
     proxy: {
       "/ttlock-api": {
-        target: "https://cnapi.ttlock.com",
+        target: "https://euapi.ttlock.com",
         changeOrigin: true,
         pathRewrite: { "^/ttlock-api": "" },
       },
