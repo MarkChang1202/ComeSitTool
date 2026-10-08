@@ -21,6 +21,11 @@ module.exports = {
         changeOrigin: true,
         pathRewrite: { "^/ttlock-api": "" },
       },
+      "/gcal-api": {
+        target: "https://calendar.google.com",
+        changeOrigin: true,
+        pathRewrite: { "^/gcal-api": "" },
+      },
     },
   },
 };

@@ -3,6 +3,10 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/gcal-api/:path*",
+      "destination": "https://calendar.google.com/:path*"
+    },
+    {
       "source": "/ttlock-api/:path*",
       "destination": "https://euapi.ttlock.com/:path*"
     }

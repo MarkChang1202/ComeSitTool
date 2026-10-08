@@ -5,6 +5,7 @@ import ComeSitTool from "../views/ComeSitTool.vue";
 import TestPage from "../views/TestPage.vue";
 import HouseTool from "../views/HouseTool.vue";
 import ShapeDemo from "../views/ShapeDemo.vue";
+import CalendarPage from "../views/CalendarPage.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes = [
     path: "/ShapeDemo",
     name: "ShapeDemo",
     component: ShapeDemo,
+  },
+  {
+    path: "/Calendar",
+    name: "Calendar",
+    component: CalendarPage,
   },
 ];
 
